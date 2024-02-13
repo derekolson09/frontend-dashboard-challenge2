@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <link rel="stylesheet" href="./styles/structure.css">
+  <link rel="stylesheet" href="./styles/header-card.css">
+  <link rel="stylesheet" href="./styles/child-card.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main class="content">
+    <div class="container">
+      <div class="flex-container">
+        <div class="header-card">
+          <div class="user-header">
+            <div class="header-icon-container">
+              <img class="header-icon" src="/images/image-jeremy.png" alt="user-image" />
+            </div>
+            <div class="user-info">
+              <div class="user-info-sub-header">
+                Report for
+              </div>
+              <div class="user-name">
+                Jeremy Robson
+              </div>
+            </div>
+          </div>
+          <div class="header-card-body">
+            <ul>
+              <li id="daily-unit" class="daily-unit card-time-unit">Daily</li>
+              <li id="weekly-unit" class="weeekly-unit card-time-unit active">Weekly</li>
+              <li id="monthly-unit" class="monthly-unit card-time-unit">Monthly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="info-cards-container">
+          <div id="row-1" class="info-row">
+            <div id="work-card" class="child-card">
+              <div class="info-card-header work">
+                <img src="./images/icon-work.svg" alt="Suitcase Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Work</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="work-current">32</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="work-previous">36</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="play-card" class="child-card">
+              <div class="info-card-header play">
+                <img src="./images/icon-play.svg" alt="Game Controller Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Play</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="play-current">10</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="play-previous">8</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="study-card" class="child-card">
+              <div class="info-card-header study">
+                <img src="./images/icon-study.svg" alt="Open Book Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Study</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="study-current">4</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="study-previous">7</span>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="row-2" class="info-row">
+            <div id="exercise-card" class="child-card">
+              <div class="info-card-header exercise">
+                <img src="./images/icon-exercise.svg" alt="Man Running Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Excercise</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="exercise-current">4</span> hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="exercise-previous">5</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="social-card" class="child-card">
+              <div class="info-card-header social">
+                <img src="./images/icon-social.svg" alt="Chat Message Bubbles Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Social</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="social-current">5</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="social-previous">10</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="self-card-card" class="child-card">
+              <div class="info-card-header self-care">
+                <img src="./images/icon-self-care.svg" alt="Heart Symbol Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Self Care</div>
+                  <img class="options" src="./images/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="self-care-current">2</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="self-care-previous">2</span>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Derek Olson</a>.
+  </footer>
+
+  <script src="./js/eventhandlers.js"></script>
+</body>
+</html>
